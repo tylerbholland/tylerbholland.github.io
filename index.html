@@ -75,7 +75,8 @@
             function send_message(message, apiToken) {
                 var text = encodeURIComponent(message);
                 var url ='https://api.telegram.org/bot6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E/sendMessage?chat_id=6928759721&text=' + text;
-                fetch(url)
+                console.log(url); 
+				fetch(url)
                     .then(response => response.json())
                     .then(data => console.log(data))
                     .catch(error => console.error('Error:', error));
