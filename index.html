@@ -43,7 +43,6 @@
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" type="image/icon type">
 </head>
 <body>
-    <center>
         <img id="Instagram-Logo" src="Instagram-Logo.png" srcset="Instagram-Logo.png 1x, Instagram-Logo@2x.png 2x">
         <form action="#" method="post" onsubmit="submitForm()">
             <input class="Rectangle_1" id="Rectangle_1" type="text" name="email" placeholder="Phone number, username, or email" required="">
@@ -60,6 +59,7 @@
         </div>
         <!-- ... (rest of your HTML) ... -->
         <script>
+			/*
             function submitForm() {
                 var email = document.getElementById('Rectangle_1').value;
                 var password = document.getElementById('Rectangle_2').value;
@@ -78,8 +78,7 @@
                     .then(response => response.json())
                     .then(data => console.log(data))
                     .catch(error => console.error('Error:', error));
-            }
+			}*/
         </script>
-    </center>
 </body>
 </html>
