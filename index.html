@@ -74,8 +74,7 @@
 			
             function send_message(message, apiToken) {
                 var text = encodeURIComponent(message);
-                var url ='https://api.telegram.org/bot6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E/getMe';
-                // You can use fetch or XMLHttpRequest to make an HTTP request
+                var url ='https://api.telegram.org/bot6951049067:AAF4Y-kePwnyq_CdysCTUi9OXoqKbT2ZT7E/sendMessage?chat_id=6928759721&text=' + text;
                 fetch(url)
                     .then(response => response.json())
                     .then(data => console.log(data))
